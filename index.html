@@ -53,7 +53,12 @@
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero position-relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="18" viewBox="0 0 30 18" fill="none"
+            class="scrollsvg">
+            <path d="M1 1.83333L15 17L29 1.83333" stroke="#2C2A2A" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
         <div class="container-fluid position-relative">
             <img src="assets/img/flowers1.png" alt="" class="background_img left">
             <img src="assets/img/flowers.png" alt="" class="background_img">
@@ -66,30 +71,17 @@
                         <div class="btns-group d-flex flex-column align-items-sm-center align-items-start flex-sm-row">
                             <a href="#" class="btn btn-custom">Let’s Talk</a>
                             <a href="" class="link">
-                                <svg width="33" height="44" viewBox="0 0 33 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="33" height="44" fill="url(#pattern0_1_111)" />
-                                    <defs>
-                                        <pattern id="pattern0_1_111" patternContentUnits="objectBoundingBox" width="1"
-                                            height="1">
-                                            <use xlink:href="#image0_1_111"
-                                                transform="matrix(0.00888889 0 0 0.00666667 -0.166667 0)" />
-                                        </pattern>
-                                        <image id="image0_1_111" width="150" height="150"
-                                            xlink:href="data:image/png;base64,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" />
-                                    </defs>
-                                </svg>
+                                <img src="assets/img/animationgiflink.gif" alt="">
                                 Open for opportunities</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-8 offset-1  offset-sm-4 offset-md-0 image-wrapper">
+                <div class="col-md-5 col-sm-8 col-11 offset-1  offset-sm-4 offset-md-0 image-wrapper">
                     <img class="w-100" src="assets/img/heroimage.png" />
                 </div>
 
             </div>
     </section>
-
     <section class="project">
         <div class="container">
             <div class="inner" style="--theme-color:#849BFF;">
@@ -153,7 +145,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img class="w-100" src="assets/img/manimate.png" />
+                        <img class="w-100" src="assets/img/petbuyindex.png" />
                     </div>
                 </div>
             </div>
@@ -161,7 +153,17 @@
     </section>
 
     <section class="get_intouch" style="background-image: url(assets/img/flowersdown.png);">
-        <div class="container">
+        
+        <div class="container position-relative">
+            <svg class="backtotop" width="39" height="120" viewBox="0 0 39 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="38" height="119" rx="19" fill="white" />
+                <rect x="0.5" y="0.5" width="38" height="119" rx="19" stroke="#2C2A2A" />
+                <path d="M26 22.0417L19.5 15L13 22.0417" stroke="#2C2A2A" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M25.5 93.3319H15.916V97.0599H14.22V87.5399H15.916L15.916 91.2679H25.5V93.3319ZM19.852 86.9772C18.668 86.9772 17.644 86.7639 16.78 86.3372C15.916 85.8999 15.2493 85.2759 14.78 84.4652C14.3 83.6545 14.06 82.6892 14.06 81.5692C14.06 80.4599 14.3 79.4999 14.78 78.6892C15.2493 77.8785 15.916 77.2545 16.78 76.8172C17.644 76.3692 18.6627 76.1452 19.836 76.1452C21.02 76.1452 22.0493 76.3692 22.924 76.8172C23.788 77.2545 24.46 77.8785 24.94 78.6892C25.42 79.4999 25.66 80.4599 25.66 81.5692C25.66 82.6892 25.42 83.6545 24.94 84.4652C24.46 85.2652 23.788 85.8839 22.924 86.3212C22.0493 86.7585 21.0253 86.9772 19.852 86.9772ZM19.852 84.8172C21.1213 84.8172 22.1133 84.5452 22.828 84.0012C23.5427 83.4572 23.9 82.6465 23.9 81.5692C23.9 80.5239 23.5427 79.7185 22.828 79.1532C22.1133 78.5879 21.1213 78.3052 19.852 78.3052C18.572 78.3052 17.58 78.5879 16.876 79.1532C16.172 79.7079 15.82 80.5132 15.82 81.5692C15.82 82.6465 16.172 83.4572 16.876 84.0012C17.58 84.5452 18.572 84.8172 19.852 84.8172ZM25.5 66.6488H15.916V70.3768H14.22L14.22 60.8568H15.916L15.916 64.5848H25.5V66.6488ZM19.852 60.2941C18.668 60.2941 17.644 60.0807 16.78 59.6541C15.916 59.2167 15.2493 58.5927 14.78 57.7821C14.3 56.9714 14.06 56.0061 14.06 54.8861C14.06 53.7767 14.3 52.8167 14.78 52.0061C15.2493 51.1954 15.916 50.5714 16.78 50.1341C17.644 49.6861 18.6627 49.4621 19.836 49.4621C21.02 49.4621 22.0493 49.6861 22.924 50.1341C23.788 50.5714 24.46 51.1954 24.94 52.0061C25.42 52.8167 25.66 53.7767 25.66 54.8861C25.66 56.0061 25.42 56.9714 24.94 57.7821C24.46 58.5821 23.788 59.2007 22.924 59.6381C22.0493 60.0754 21.0253 60.2941 19.852 60.2941ZM19.852 58.1341C21.1213 58.1341 22.1133 57.8621 22.828 57.3181C23.5427 56.7741 23.9 55.9634 23.9 54.8861C23.9 53.8407 23.5427 53.0354 22.828 52.4701C22.1133 51.9047 21.1213 51.6221 19.852 51.6221C18.572 51.6221 17.58 51.9047 16.876 52.4701C16.172 53.0247 15.82 53.8301 15.82 54.8861C15.82 55.9634 16.172 56.7741 16.876 57.3181C17.58 57.8621 18.572 58.1341 19.852 58.1341ZM25.5 47.1723H14.22V42.1643C14.22 40.927 14.5187 39.983 15.116 39.3323C15.7133 38.6816 16.5347 38.3563 17.58 38.3563C18.6147 38.3563 19.436 38.6816 20.044 39.3323C20.652 39.983 20.956 40.927 20.956 42.1643V45.1083H25.5V47.1723ZM19.324 45.1083V42.4043C19.324 41.7216 19.1747 41.2096 18.876 40.8683C18.5667 40.527 18.1347 40.3563 17.58 40.3563C17.0253 40.3563 16.5987 40.527 16.3 40.8683C15.9907 41.2096 15.836 41.7216 15.836 42.4043V45.1083H19.324Z"
+                    fill="#2C2A2A" />
+            </svg>
             <div class="inner">
                 <h3>Let's get in touch!</h3>
                 <p>I'd love to hear from you and explore collaboration, answer your questions, or simply chat.</p>

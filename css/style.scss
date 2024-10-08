@@ -119,6 +119,13 @@ nav {
 }
 
 .hero {
+    .scrollsvg {
+        left: 50%;
+        bottom: 50px;
+        transform: translateX(-50%);
+        z-index: 999;
+        position: absolute;
+    }
 
     .container-fluid {
         padding-top: 180px;
@@ -218,6 +225,12 @@ nav {
 
     svg {
         margin: 0 !important;
+    }
+
+    img {
+        width: 33px;
+        height: 33px;
+        object-fit: contain;
     }
 
     &.backgrounded {
@@ -373,6 +386,22 @@ nav {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;
+
+    .backtotop {
+        top: 15%;
+        right: 15px;
+        position: absolute;
+
+        @media screen and (max-width:991px) {
+            top: 0;
+            transform: translateY(-100%);
+        }
+
+        @media screen and (max-width:767px) {
+            height: 100px;
+        }
+
+    }
 
     @media screen and (max-width:767px) {
         padding: 70px 0;
@@ -710,7 +739,7 @@ nav {
 }
 
 .icon-text {
-    padding: 25px 100px;
+    padding: 45px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -891,7 +920,7 @@ nav {
                 @media screen and (max-width:991px) {
                     font-size: 22px;
                 }
-    
+
                 @media screen and (max-width:767px) {
                     font-size: 18px;
                 }
@@ -1056,12 +1085,15 @@ p.fs-5 {
         .text-wrapper {
 
             p {
+                max-width: 640px;
                 font-size: 27px !important;
                 font-weight: 700;
                 color: var(--theme-color-text);
+
                 @media screen and (max-width:1170px) {
                     font-size: 22px;
                 }
+
                 @media screen and (max-width:767px) {
                     font-size: 18px;
                 }
@@ -1124,5 +1156,17 @@ p.fs-5 {
         width: 80% !important;
         display: flex;
         margin: 0 auto;
+    }
+}
+
+img {
+
+    &.gif {
+        width: 89% !important;
+        object-fit: contain;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 60px;
+        box-shadow: 0px 0px 15.3px 6px rgba(0, 0, 0, 0.40);
     }
 }
