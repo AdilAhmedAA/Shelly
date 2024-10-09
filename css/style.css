@@ -119,6 +119,40 @@ nav a.navbar-brand span {
 }
 .hero .container-fluid .image-wrapper {
   margin-top: 80px;
+  position: relative;
+}
+.hero .container-fluid .image-wrapper .text_itsme {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  flex-direction: column;
+  align-items: flex-end;
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .hero .container-fluid .image-wrapper .text_itsme {
+    top: 10%;
+    left: 10%;
+  }
+}
+.hero .container-fluid .image-wrapper .text_itsme p {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.25px;
+  margin-bottom: 0;
+}
+.hero .container-fluid .image-wrapper .text_itsme svg {
+  margin-right: -30px;
+  margin-top: 15px;
+}
+.hero .container-fluid .image-wrapper:hover .text_itsme {
+  display: flex;
 }
 @media screen and (max-width: 767px) {
   .hero .container-fluid .image-wrapper {
@@ -1115,4 +1149,67 @@ img.gif {
   margin-bottom: auto;
   border-radius: 60px;
   box-shadow: 0px 0px 15.3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.about_us {
+  padding: 100px 0;
+}
+@media screen and (max-width: 991px) {
+  .about_us {
+    padding: 80px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about_us {
+    padding: 50px 0;
+  }
+}
+.about_us h2 {
+  color: #000;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 125%;
+  letter-spacing: 0.35px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1199px) {
+  .about_us h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about_us h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .about_us h2 {
+    font-size: 24px;
+  }
+}
+.about_us p {
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.25px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1199px) {
+  .about_us p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about_us p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .about_us p {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
